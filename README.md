@@ -16,4 +16,4 @@ Run modified Celeste Studio.exe from this release
 
 Monitor the console window to see which commands get sent to VNyan and write websocket handler nodes to do what you want with that info.
 
-List of instructions, modifiable settings and example node graphs to come later.
+List of instructions, modifiable settings and example node graphs to come later. Not quite yet ready for production use as I need to do a settings screen among other things, but it'll work for some things
