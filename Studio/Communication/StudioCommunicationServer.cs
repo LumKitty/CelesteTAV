@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading;
 using System.Windows.Forms;
 using StudioCommunication;
+using static CelesteStudio.Communication.VNyanWebSocket; // Added for Lum's VNyan shite
 
 namespace CelesteStudio.Communication;
 
@@ -77,6 +78,7 @@ public sealed class StudioCommunicationServer : StudioCommunicationBase {
     private void ProcessSendState(byte[] data) {
         try {
             StudioInfo studioInfo = StudioInfo.FromByteArray(data);
+            DoVNyanComms(studioInfo); // Added for Lum's VNyan shite
             CommunicationWrapper.StudioInfo = studioInfo;
         } catch (InvalidCastException) {
             string studioVersion = Studio.Version.ToString(3);

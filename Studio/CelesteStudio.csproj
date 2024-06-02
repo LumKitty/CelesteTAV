@@ -1,6 +1,6 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <OutputType>WinExe</OutputType>
+        <OutputType>Exe</OutputType>
         <AssemblyName>Celeste Studio</AssemblyName>
         <TargetFramework Condition="'$(OS)' != 'Windows_NT'">net462</TargetFramework>
         <TargetFramework Condition="'$(OS)' == 'Windows_NT'">net452</TargetFramework>
@@ -30,10 +30,12 @@
     </PropertyGroup>
     <PropertyGroup>
         <ApplicationIcon>GoldBerry.ico</ApplicationIcon>
+        <TargetFramework>net462</TargetFramework>
     </PropertyGroup>
     <Import Project="..\StudioCommunication\StudioCommunication.projitems" Label="Shared" />
     <ItemGroup>
         <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" />
+        <PackageReference Include="WatsonWebsocket" Version="4.1.2" />
     </ItemGroup>
     <ItemGroup Condition="'$(OS)' != 'Windows_NT'">
         <PackageReference Include="System.Drawing.Common" Version="4.6.2" />
