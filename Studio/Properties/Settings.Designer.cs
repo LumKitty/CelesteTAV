@@ -23,84 +23,111 @@ namespace CelesteStudio.Properties {
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("ws://localhost:8000/vnyan")]
         public string VNyanURL {
             get {
                 return ((string)(this["VNyanURL"]));
             }
+            set {
+                this["VNyanURL"] = value;
+            }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
         public int VTuberDangerZoneX1 {
             get {
                 return ((int)(this["VTuberDangerZoneX1"]));
             }
+            set {
+                this["VTuberDangerZoneX1"] = value;
+            }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("136")]
         public int VTuberDangerZoneY1 {
             get {
                 return ((int)(this["VTuberDangerZoneY1"]));
             }
+            set {
+                this["VTuberDangerZoneY1"] = value;
+            }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("48")]
         public int VTuberDangerZoneX2 {
             get {
                 return ((int)(this["VTuberDangerZoneX2"]));
             }
+            set {
+                this["VTuberDangerZoneX2"] = value;
+            }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("180")]
         public int VTuberDangerZoneY2 {
             get {
                 return ((int)(this["VTuberDangerZoneY2"]));
             }
+            set {
+                this["VTuberDangerZoneY2"] = value;
+            }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
         public int VTuberSafeZoneX1 {
             get {
                 return ((int)(this["VTuberSafeZoneX1"]));
             }
+            set {
+                this["VTuberSafeZoneX1"] = value;
+            }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("104")]
         public int VTuberSafeZoneY1 {
             get {
                 return ((int)(this["VTuberSafeZoneY1"]));
             }
+            set {
+                this["VTuberSafeZoneY1"] = value;
+            }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("80")]
         public int VTuberSafeZoneX2 {
             get {
                 return ((int)(this["VTuberSafeZoneX2"]));
             }
+            set {
+                this["VTuberSafeZoneX2"] = value;
+            }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("180")]
         public int VTuberSafeZoneY2 {
             get {
                 return ((int)(this["VTuberSafeZoneY2"]));
+            }
+            set {
+                this["VTuberSafeZoneY2"] = value;
             }
         }
     }

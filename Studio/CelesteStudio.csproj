@@ -48,6 +48,11 @@
         <Reference Include="System.Windows.Forms" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Update="Properties\Settings.Designer.cs">
+          <DesignTimeSharedInput>True</DesignTimeSharedInput>
+          <AutoGen>True</AutoGen>
+          <DependentUpon>Settings.settings</DependentUpon>
+        </Compile>
         <Compile Update="RichText\AutocompleteMenu.cs">
             <SubType>Component</SubType>
         </Compile>
@@ -60,9 +65,7 @@
         <Compile Update="RichText\RichText.cs">
             <SubType>UserControl</SubType>
         </Compile>
-        <Compile Update="Studio.cs">
-            <SubType>Form</SubType>
-        </Compile>
+        <Compile Update="Studio.cs" />
         <Compile Update="Studio.Designer.cs">
             <DependentUpon>Studio.cs</DependentUpon>
         </Compile>
@@ -89,6 +92,12 @@
     </ItemGroup>
     <ItemGroup>
         <Content Include="GoldBerry.ico" />
+    </ItemGroup>
+    <ItemGroup>
+      <None Update="Properties\Settings.settings">
+        <Generator>SettingsSingleFileGenerator</Generator>
+        <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+      </None>
     </ItemGroup>
     <Target Name="PostBuild" AfterTargets="PostBuildEvent">
         <Delete Files="$(TargetDir)$(AssemblyName).exe.config" />

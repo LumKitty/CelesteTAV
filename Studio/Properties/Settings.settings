@@ -2,31 +2,31 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="CelesteStudio.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="VNyanURL" Type="System.String" Scope="Application">
+    <Setting Name="VNyanURL" Type="System.String" Scope="User">
       <Value Profile="(Default)">ws://localhost:8000/vnyan</Value>
     </Setting>
-    <Setting Name="VTuberDangerZoneX1" Type="System.Int32" Scope="Application">
+    <Setting Name="VTuberDangerZoneX1" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="VTuberDangerZoneY1" Type="System.Int32" Scope="Application">
+    <Setting Name="VTuberDangerZoneY1" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">136</Value>
     </Setting>
-    <Setting Name="VTuberDangerZoneX2" Type="System.Int32" Scope="Application">
+    <Setting Name="VTuberDangerZoneX2" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">48</Value>
     </Setting>
-    <Setting Name="VTuberDangerZoneY2" Type="System.Int32" Scope="Application">
+    <Setting Name="VTuberDangerZoneY2" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">180</Value>
     </Setting>
-    <Setting Name="VTuberSafeZoneX1" Type="System.Int32" Scope="Application">
+    <Setting Name="VTuberSafeZoneX1" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="VTuberSafeZoneY1" Type="System.Int32" Scope="Application">
+    <Setting Name="VTuberSafeZoneY1" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">104</Value>
     </Setting>
-    <Setting Name="VTuberSafeZoneX2" Type="System.Int32" Scope="Application">
+    <Setting Name="VTuberSafeZoneX2" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">80</Value>
     </Setting>
-    <Setting Name="VTuberSafeZoneY2" Type="System.Int32" Scope="Application">
+    <Setting Name="VTuberSafeZoneY2" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">180</Value>
     </Setting>
   </Settings>
