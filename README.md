@@ -18,4 +18,6 @@ Monitor the console window to see which commands get sent to VNyan and write web
 
 List of instructions, modifiable settings and example node graphs to come later. Not quite yet ready for production use as I need to do a settings screen among other things, but it'll work for some things
 
-If you use this give me credit or a shoutout. If you somehow make millions off it, consider sending some my way :D
+If you use this give me credit and maybe a shoutout. If you somehow make millions off it, consider sending some my way :D
+
+https://twitch.tv/LumKitty
