@@ -6,7 +6,8 @@ Install CelesteTAS mod via Olympus
 
 Copy the following text:
 
-```Wind: {Level.Wind}
+```
+Wind: {Level.Wind}
 HairColour: {Player.Hair.Color}
 CameraPos: {Level.Camera.Position}
 ```
