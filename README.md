@@ -20,17 +20,27 @@ HairColour: {Player.Hair.Color}
 CameraPos: {Level.Camera.Position}
 ```
 Launch Celeste, go to Mod Options -> Celeste TAS -> Info HUD -> Set Custom Info Template from Clipboard
+
 Run modified Celeste Studio.exe from this release after the game has reached the title screen
+
 (Optional): Import the example node graph to get a starter config
+
 Monitor the console window to see which commands get sent to VNyan and write websocket handler nodes to do what you want with that info. The main websocket messages are:
 
 CelesteFeather: 1 = feather is active, 0 = finished
+
 CelesteDead: 1 = dead, 0 = respawned
+
 CelesteSwim: 1 = entered water, 0 = left water
+
 CelesteBubble: 1 = in a bubble, (can't tell if red or green)
+
 CelesteRedBubbleDash: 1 = red bubble doing its thing
+
 CelesteMadelineBehindVTuber: 1 = behind, 0 = not
+
 CelesteBadelineLaunch: 1 = Start of being thrown off screen, 0 = off screen about to scene change
+
 CelesteIntroJump: 1 = fired immediately on scene change after a Badeline launch: 0 = player has control back 
 
 CelesteWind is 3 comma separated values: X direction, Y direction and windspeed.
