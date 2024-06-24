@@ -1,31 +1,28 @@
 A hack of CelesteTAS used to extract game info and send to VNyan by https://twitch.tv/LumKitty
 
 Features:
-Track Madeline's hair colour (e.g. make your model's hair follow Madeline)
-Track in-game wind (e.g. make VNyan wind follow game wind and blow your own hair to match what is on-screen)
-Track death & respawn (e.g. ragdoll your model when you die)
-Calculate if Madeline is behind your VTuber (e.g. hide or move your model so viewers can see what you're doing)
-Track various other events (e.g. swimming, feather use, bubble use and more)
+* Track Madeline's hair colour (e.g. make your model's hair follow Madeline)
+* Track in-game wind (e.g. make VNyan wind follow game wind and blow your own hair to match what is on-screen)
+* Track death & respawn (e.g. ragdoll your model when you die)
+* Calculate if Madeline is behind your VTuber (e.g. hide or move your model so viewers can see what you're doing)
+* Track various other events (e.g. swimming, feather use, bubble use and more)
 
 Instructions:
 
-Download from: https://github.com/LumKitty/CelesteTAV/releases/latest
-Install CelesteTAS mod via Olympus
-
-Copy the following text:
-
+1. Download from: https://github.com/LumKitty/CelesteTAV/releases/latest
+2. Install CelesteTAS mod via Olympus
+3. Copy the following text:
 ```
 Wind: {Level.Wind}
 HairColour: {Player.Hair.Color}
 CameraPos: {Level.Camera.Position}
 ```
-Launch Celeste, go to Mod Options -> Celeste TAS -> Info HUD -> Set Custom Info Template from Clipboard
-
-Run modified Celeste Studio.exe from this release after the game has reached the title screen
-
-(Optional): Import the example node graph to get a starter config
-
-Monitor the console window to see which commands get sent to VNyan and write websocket handler nodes to do what you want with that info. The main websocket messages are:
+4. Launch Celeste, go to Mod Options -> Celeste TAS -> Info HUD -> Set Custom Info Template from Clipboard
+5. Run modified Celeste Studio.exe from this release after the game has reached the title screen
+6. (Optional): Import the example node graph to get a starter config
+7. Monitor the console window to see which commands get sent to VNyan and write websocket handler nodes to do what you want with that info.
+  
+The main websocket messages are:
 
 CelesteFeather: 1 = feather is active, 0 = finished
 
