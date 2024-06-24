@@ -24,18 +24,17 @@ CameraPos: {Level.Camera.Position}
   
 The main websocket messages are:
 
-**CelesteFeather**: 1 = feather is active, 0 = finished\
+**CelesteFeather**: 1 = feather is active, 0 = exited feather\
 **CelesteDead**: 1 = dead, 0 = respawned\
 **CelesteSwim**: 1 = entered water, 0 = left water\
-**CelesteBubble**: 1 = in a bubble, (can't tell if red or green)\
-**CelesteRedBubbleDash**: 1 = red bubble doing its thing\
+**CelesteBubble**: 1 = in a bubble, (can't tell if red or green) 0 = left bubble\
+**CelesteRedBubbleDash**: 1 = red bubble doing its thing 0 = left bubble\
 **CelesteMadelineBehindVTuber**: 1 = behind, 0 = moved away again\
 **CelesteBadelineLaunch**: 1 = Start of being thrown off screen, 0 = off screen about to scene change\
 **CelesteIntroJump**: 1 = fired immediately on scene change after a Badeline launch: 0 = player has control back\
 **CelesteWind** is 3 comma separated values: X direction, Y direction and windspeed.\
 X and Y are intended to be used in a Vector3 to give the direction, but they are raw values. The wind node doesn't care about the intensity, it just calculates a direction. Windspeed needs to be set as well and is simply the square root of x^2 + y^2. Values are typically 0-1200. Max on the VNyan wind node is 10, so I recommend dividing by 100\
 **CelesteHairColour** is Madeline's current hair colour in a format readable by the "Text to Color" node (#RRGGBBAA).\
-The example requires Jayo's Poiyomi plugin and a model set up to use it (white hair, colour set to be animatable at runtime). In the example the material for the hair is called "CelesteHairWhite"\
 **CelesteRoom**: The name of the current room you're in\
 **CelesteMenu**: text parameter with many possible values, recommend watching the console as you navigate menus if you want to work with this one\
 
@@ -43,5 +42,7 @@ Config file only needs to be changed if you need to change the VNyan URL from th
 
 For hair colour changing, you need a model with white hair using Poiyomi shaders configured to be modifable at runtime, and Jayo's Poiyomi plugin for VNyan: https://github.com/jayo-exe/JayoPoiyomiPlugin
 
-If you use this give me credit and maybe a shoutout. If you somehow make millions off it, consider sending some my way :D 
+In the example node graph the material for the hair is called "CelesteHairWhite"
+
+If you use this mod, give me credit and maybe a shoutout. If you somehow make millions off it, consider sending some my way :D 
 (Also send me a link to your stream, I'd love to see what people come up with using this!)
