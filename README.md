@@ -10,7 +10,7 @@ Features:
 Instructions:
 
 1. Download from: https://github.com/LumKitty/CelesteTAV/releases/latest
-2. Install CelesteTAS mod via Olympus
+2. Install CelesteTAS mod via Olympus Mod Manager: https://gamebanana.com/tools/6449
 3. Copy the following text:
 ```
 Wind: {Level.Wind}
@@ -18,9 +18,10 @@ HairColour: {Player.Hair.Color}
 CameraPos: {Level.Camera.Position}
 ```
 4. Launch Celeste, go to Mod Options -> Celeste TAS -> Info HUD -> Set Custom Info Template from Clipboard
-5. Run modified Celeste Studio.exe from this release after the game has reached the title screen
-6. (Optional): Import the example node graph to get a starter config
-7. Monitor the console window to see which commands get sent to VNyan and write websocket handler nodes to do what you want with that info.
+5. (Optional): Unbind all keyboard and controller bindings for CelesteTAS and disable
+6. Run modified Celeste Studio.exe from this release after the game has reached the title screen
+7. (Optional): Import the example node graph to get a starter config
+8. Monitor the console window to see which commands get sent to VNyan and write websocket handler nodes to do what you want with that info.
   
 The main websocket messages are:
 
@@ -46,3 +47,5 @@ In the example node graph the material for the hair is called "CelesteHairWhite"
 
 If you use this mod, give me credit and maybe a shoutout. If you somehow make millions off it, consider sending some my way :D 
 (Also send me a link to your stream, I'd love to see what people come up with using this!)
+
+Consider giving me a follow at https://twitch.tv/LumKitty
