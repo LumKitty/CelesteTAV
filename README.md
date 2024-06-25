@@ -1,7 +1,9 @@
 A hack of CelesteTAS used to extract game info and send to VNyan for your model to react to
 
 Features:
-* Track Madeline's hair colour (e.g. make your model's hair follow Madeline)
+* Track Madeline's hair colour (e.g. to make your model's hair follow Madeline's)
+    * Supports hair colour mods (tested with Hyperline)
+    * Supports extra dash mods (tested with Pointless Machines in Strawberry Jam)
 * Track in-game wind (e.g. make VNyan wind follow game wind and blow your own hair to match what is on-screen)
 * Track death & respawn (e.g. ragdoll your model when you die)
 * Calculate if Madeline is behind your VTuber (e.g. hide or move your model so viewers can see what you're doing)
