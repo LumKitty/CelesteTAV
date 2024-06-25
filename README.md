@@ -41,7 +41,9 @@ CameraPos: {Level.Camera.Position}
 | **CelesteRoom** | The name of the current room you're in |
 | **CelesteMenu** | text parameter with many possible values, recommend watching the console as you navigate menus if you want to work with this one |
 
-Config file only needs to be changed if you need to change the VNyan URL from the default ws://127.0.0.1:8000/vnyan or you need to tweak the MadelineBehindVTuber option.\
+### Configuration
+
+An example config file is included and only needs to be changed if you need to change the VNyan URL from the default ws://127.0.0.1:8000/vnyan or you need to tweak the MadelineBehindVTuber option which by default assumes your model is in the bottom left overlapping the game screen.
 
 ### Configuring detection of Madeline behind VTuber
 
