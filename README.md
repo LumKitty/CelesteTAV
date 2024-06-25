@@ -27,19 +27,19 @@ CameraPos: {Level.Camera.Position}
   
 ### Websocket messages 
 
-**CelesteFeather**: 1 = feather is active, 0 = exited feather\
-**CelesteDead**: 1 = dead, 0 = respawned\
-**CelesteSwim**: 1 = entered water, 0 = left water\
-**CelesteBubble**: 1 = in a bubble, (can't tell if red or green) 0 = left bubble\
-**CelesteRedBubbleDash**: 1 = red bubble doing its thing 0 = left bubble\
-**CelesteMadelineBehindVTuber**: 1 = behind, 0 = moved away again (see instructions below)\
-**CelesteBadelineLaunch**: 1 = Start of being thrown off screen, 0 = off screen about to scene change\
-**CelesteIntroJump**: 1 = fired immediately on scene change after a Badeline launch: 0 = player has control back\
-**CelesteWind** is 3 comma separated values: X direction, Y direction and windspeed.\
-X and Y are intended to be used in a Vector3 to give the direction, but they are raw values. The wind node doesn't care about the intensity, it just calculates a direction. Windspeed needs to be set as well and is simply the square root of x^2 + y^2. Values are typically 0-1200. Max on the VNyan wind node is 10, so I recommend dividing by 100\
-**CelesteHairColour** is Madeline's current hair colour in a format readable by the "Text to Color" node (#RRGGBBAA).\
-**CelesteRoom**: The name of the current room you're in\
-**CelesteMenu**: text parameter with many possible values, recommend watching the console as you navigate menus if you want to work with this one\
+| **CelesteFeather** | 1 = feather is active, 0 = exited feather |
+| **CelesteDead** | 1 = dead, 0 = respawned |
+| **CelesteSwim** | 1 = entered water, 0 = left water |
+| **CelesteBubble** | 1 = in a bubble, (can't tell if red or green) 0 = left bubble |
+| **CelesteRedBubbleDash** | 1 = red bubble doing its thing 0 = left bubble |
+| **CelesteMadelineBehindVTuber** | 1 = behind, 0 = moved away again (see instructions below) |
+| **CelesteBadelineLaunch** | 1 = Start of being thrown off screen, 0 = off screen about to scene change |
+| **CelesteIntroJump** | 1 = fired immediately on scene change after a Badeline launch: 0 = player has control back |
+| **CelesteWind** | 3 comma separated values: X direction, Y direction and windspeed \
+X and Y are intended to be used in a Vector3 to give the direction, but they are raw values. The wind node doesn't care about the intensity, it just calculates a direction. Windspeed needs to be set as well and is simply the square root of x^2 + y^2. Values are typically 0-1200. Max on the VNyan wind node is 10, so I recommend dividing by 100 |
+| **CelesteHairColour** | is Madeline's current hair colour in a format readable by the "Text to Color" node (#RRGGBBAA). |
+| **CelesteRoom** | The name of the current room you're in |
+| **CelesteMenu** | text parameter with many possible values, recommend watching the console as you navigate menus if you want to work with this one |
 
 Config file only needs to be changed if you need to change the VNyan URL from the default ws://127.0.0.1:8000/vnyan or you need to tweak the MadelineBehindVTuber option.\
 
