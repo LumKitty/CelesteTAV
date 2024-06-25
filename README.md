@@ -26,7 +26,8 @@ CameraPos: {Level.Camera.Position}
 8. Monitor the console window to see which commands get sent to VNyan and write websocket handler nodes to do what you want with that info.
   
 ### Websocket messages 
-
+| Message | Parameters |
+| ------- | ---------- |
 | **CelesteFeather** | 1 = feather is active, 0 = exited feather |
 | **CelesteDead** | 1 = dead, 0 = respawned |
 | **CelesteSwim** | 1 = entered water, 0 = left water |
