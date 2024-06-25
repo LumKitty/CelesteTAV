@@ -48,6 +48,7 @@ An example config file is included and only needs to be changed if you need to c
 ### Configuring detection of Madeline behind VTuber
 
 Co-ordinates are based on the Celeste window (X: 0 - 320, Y: 0 - 180, starting in the bottom left). You need to define a "Danger Zone" square as close to where your model will be as possible, and a "Safe Zone" square that is bigger.
+
 When Madeline enters the danger zone we send CelesteMadelineBehindVTuber 1 and when she leaves the safe zone we send a 0. You could then use this to e.g. hide your VTuber or make them transparent so that viewers can still see what you're doing. The reason safe zone needs to be bigger is to avoid the situation where you're constantly appearing and disappearing with only very small movements (e.g. maintaining position on windy levels)
 
 ### Configuring hair colour changing
