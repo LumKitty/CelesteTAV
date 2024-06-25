@@ -1,6 +1,6 @@
-A hack of CelesteTAS used to extract game info and send to VNyan for your model to react to
+## A hack of CelesteTAS used to extract game info and send to VNyan for your model to react to
 
-Features:
+### Features
 * Track Madeline's hair colour (e.g. to make your model's hair follow Madeline's)
     * Supports hair colour mods (tested with Hyperline)
     * Supports extra dash mods (tested with Pointless Machines in Strawberry Jam)
@@ -9,7 +9,7 @@ Features:
 * Calculate if Madeline is behind your VTuber (e.g. hide or move your model so viewers can see what you're doing)
 * Track various other events (e.g. swimming, feather use, bubble use and more)
 
-Instructions:
+### Instructions
 
 1. Download from: https://github.com/LumKitty/CelesteTAV/releases/latest
 2. Install CelesteTAS mod via Olympus Mod Manager: https://gamebanana.com/tools/6449
@@ -25,7 +25,7 @@ CameraPos: {Level.Camera.Position}
 7. (Optional): Import the example node graph into VNyan to get a starter config
 8. Monitor the console window to see which commands get sent to VNyan and write websocket handler nodes to do what you want with that info.
   
-The main websocket messages are:
+### Websocket messages 
 
 **CelesteFeather**: 1 = feather is active, 0 = exited feather\
 **CelesteDead**: 1 = dead, 0 = respawned\
