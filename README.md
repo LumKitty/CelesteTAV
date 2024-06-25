@@ -30,7 +30,7 @@ The main websocket messages are:
 **CelesteSwim**: 1 = entered water, 0 = left water\
 **CelesteBubble**: 1 = in a bubble, (can't tell if red or green) 0 = left bubble\
 **CelesteRedBubbleDash**: 1 = red bubble doing its thing 0 = left bubble\
-**CelesteMadelineBehindVTuber**: 1 = behind, 0 = moved away again\
+**CelesteMadelineBehindVTuber**: 1 = behind, 0 = moved away again (see instructions below)\
 **CelesteBadelineLaunch**: 1 = Start of being thrown off screen, 0 = off screen about to scene change\
 **CelesteIntroJump**: 1 = fired immediately on scene change after a Badeline launch: 0 = player has control back\
 **CelesteWind** is 3 comma separated values: X direction, Y direction and windspeed.\
@@ -40,10 +40,20 @@ X and Y are intended to be used in a Vector3 to give the direction, but they are
 **CelesteMenu**: text parameter with many possible values, recommend watching the console as you navigate menus if you want to work with this one\
 
 Config file only needs to be changed if you need to change the VNyan URL from the default ws://127.0.0.1:8000/vnyan or you need to tweak the MadelineBehindVTuber option.\
-Co-ordinates are based on the Celeste window (X: 0 - 320, Y: 0 - 180). You need to define a "Danger Zone" square as close to where your model will be as possible, and a "Safe Zone" square that is bigger. When Madeline enters the danger zone we send CelesteMadelineBehindVTuber 1 and when she leaves the safe zone we send a 0. You could then use this to e.g. hide your VTuber or make them transparent so that viewers can still see what you're doing. The reason safe zone needs to be bigger is to avoid the situation where you're constantly appearing and disappearing with only very small movements (e.g. maintaining position on windy levels)
 
-For hair colour changing, you need a model with white hair using Poiyomi shaders which must be configured to be modifable at runtime. You will also need Jayo's Poiyomi plugin for VNyan: https://github.com/jayo-exe/JayoPoiyomiPlugin \
+**Configuring detection of Madeline behing VTuber**
+
+Co-ordinates are based on the Celeste window (X: 0 - 320, Y: 0 - 180, starting in the bottom left). You need to define a "Danger Zone" square as close to where your model will be as possible, and a "Safe Zone" square that is bigger.\
+When Madeline enters the danger zone we send CelesteMadelineBehindVTuber 1 and when she leaves the safe zone we send a 0. You could then use this to e.g. hide your VTuber or make them transparent so that viewers can still see what you're doing. The reason safe zone needs to be bigger is to avoid the situation where you're constantly appearing and disappearing with only very small movements (e.g. maintaining position on windy levels)
+
+**Configuring hair colour changing**
+
+This is beyond the scope of this document but you need the following:
+1. Hair should be white and must be using the Poiyomi shader: https://github.com/poiyomi/PoiyomiToonShader
+2. Hair material should be set to renamed when locked and animated when locked
+3. You must have Jayo's Poiyomi plugin for VNyan installed and understand how to use it: https://github.com/jayo-exe/JayoPoiyomiPlugin
 In the example node graph the material for the hair is called "CelesteHairWhite"
+
 
 If you use this mod, maybe give me a shoutout or something. If you somehow make millions off it, consider sending some my way :D 
 (Also send me a link to your stream, I'd love to see what people come up with using this!)
