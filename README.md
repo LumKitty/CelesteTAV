@@ -51,7 +51,7 @@ Co-ordinates are based on the Celeste window (X: 0 - 320, Y: 0 - 180, starting i
 
 When Madeline enters the danger zone we send CelesteMadelineBehindVTuber 1 and when she leaves the safe zone we send a 0. You could then use this to e.g. hide your VTuber or make them transparent so that viewers can still see what you're doing. The reason safe zone needs to be bigger is to avoid the situation where you're constantly appearing and disappearing with only very small movements (e.g. maintaining position on windy levels)
 
-### Configuring hair colour changing
+### Setting up hair colour changing in VNyan
 
 This is beyond the scope of this document but you need the following:
 1. Hair should be white and must be using the Poiyomi shader: https://github.com/poiyomi/PoiyomiToonShader
