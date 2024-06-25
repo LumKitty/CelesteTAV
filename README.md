@@ -51,7 +51,7 @@ When Madeline enters the danger zone we send CelesteMadelineBehindVTuber 1 and w
 This is beyond the scope of this document but you need the following:
 1. Hair should be white and must be using the Poiyomi shader: https://github.com/poiyomi/PoiyomiToonShader
 2. Hair material should be set to renamed when locked and animated when locked
-3. You must have Jayo's Poiyomi plugin for VNyan installed and understand how to use it: https://github.com/jayo-exe/JayoPoiyomiPlugin
+3. You must have Jayo's Poiyomi plugin for VNyan installed and understand how to use it: https://github.com/jayo-exe/JayoPoiyomiPlugin \
 In the example node graph the material for the hair is called "CelesteHairWhite"
 
 
