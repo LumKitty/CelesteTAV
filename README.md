@@ -20,7 +20,7 @@ HairColour: {Player.Hair.Color}
 CameraPos: {Level.Camera.Position}
 ```
 4. Launch Celeste, go to Mod Options -> Celeste TAS -> Info HUD -> Set Custom Info Template from Clipboard
-5. (Optional): Unbind all keyboard and controller bindings for CelesteTAS and disable
+5. (Optional): Unbind all keyboard and controller bindings for CelesteTAS
 6. Run modified Celeste Studio.exe from this release after the game has reached the title screen
 7. (Optional): Import the example node graph to get a starter config
 8. Monitor the console window to see which commands get sent to VNyan and write websocket handler nodes to do what you want with that info.
