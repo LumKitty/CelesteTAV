@@ -1,6 +1,6 @@
 A hack of CelesteTAS used to extract game info and send to VNyan for your model to react to
 
-![ezgif-2-9771a79a7a](https://github.com/LumKitty/CelesteTAV/assets/8736448/3c1e75b6-5250-4f12-8e8a-4ebf078954eb)
+![GIF of a catgirl VTuber playing the last level of Celeste. Her hair changes colour in sync with the colour changes of the in-game character and is also blown around in sync with the in-game wind. When the player dies, the VTuber model is ragdolled](https://github.com/LumKitty/CelesteTAV/assets/8736448/3c1e75b6-5250-4f12-8e8a-4ebf078954eb)
 
 ### Features
 * Track Madeline's hair colour (e.g. to make your model's hair follow Madeline's)
