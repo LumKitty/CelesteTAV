@@ -1,6 +1,6 @@
 A hack of CelesteTAS used to extract game info and send to VNyan for your model to react to
 
-![](https://i.imgur.com/sXmAEqx.gif)
+![ezgif-2-9771a79a7a](https://github.com/LumKitty/CelesteTAV/assets/8736448/3c1e75b6-5250-4f12-8e8a-4ebf078954eb)
 
 ### Features
 * Track Madeline's hair colour (e.g. to make your model's hair follow Madeline's)
