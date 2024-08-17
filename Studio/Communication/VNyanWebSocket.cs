@@ -24,6 +24,15 @@ namespace CelesteStudio.Communication;
 public static class VNyanWebSocket {
     
     private static string GetSetting(string param) {
+        if (firstRun) {
+            Log("CelesteTAV v" + modVersion);
+            Log("(based on CelesteTAS)");
+            Log("https://github.com/LumKitty/CelesteTAV");
+            Log("https://twitch.tv/LumKitty");
+            Log("");
+            firstRun = false;
+        }
+
         string result = "";
         string line;
         string setting;
@@ -59,21 +68,24 @@ public static class VNyanWebSocket {
 
     private static WatsonWsClient wsClient;
     private static bool wsConnected = false;
+    private static bool firstRun = true;
+    private static string modVersion = "3.39.5-lum-1.0";
     private static System.Threading.CancellationToken CT = new System.Threading.CancellationToken();
     //private static string VNyanURL = Properties.Settings.Default.VNyanURL;
-    private static string VNyanURL = GetSetting("VNyanURL");
-    private static int DangerZoneX1 = GetSettingInt("VTuberDangerZoneX1");
-    private static int DangerZoneX2 = GetSettingInt("VTuberDangerZoneX2");
-    private static int DangerZoneY1 = GetSettingInt("VTuberDangerZoneY1");
-    private static int DangerZoneY2 = GetSettingInt("VTuberDangerZoneY2");
-    private static int SafeZoneX1 = GetSettingInt("VTuberSafeZoneX1");
-    private static int SafeZoneX2 = GetSettingInt("VTuberSafeZoneX2");
-    private static int SafeZoneY1 = GetSettingInt("VTuberSafeZoneY1");
-    private static int SafeZoneY2 = GetSettingInt("VTuberSafeZoneY2");
+    private static readonly string VNyanURL = GetSetting("VNyanURL");
+    private static readonly int DangerZoneX1 = GetSettingInt("VTuberDangerZoneX1");
+    private static readonly int DangerZoneX2 = GetSettingInt("VTuberDangerZoneX2");
+    private static readonly int DangerZoneY1 = GetSettingInt("VTuberDangerZoneY1");
+    private static readonly int DangerZoneY2 = GetSettingInt("VTuberDangerZoneY2");
+    private static readonly int SafeZoneX1 = GetSettingInt("VTuberSafeZoneX1");
+    private static readonly int SafeZoneX2 = GetSettingInt("VTuberSafeZoneX2");
+    private static readonly int SafeZoneY1 = GetSettingInt("VTuberSafeZoneY1");
+    private static readonly int SafeZoneY2 = GetSettingInt("VTuberSafeZoneY2");
 
     private static readonly string[] FirstSplit = { "\r\n", "\r", "\n" };
     private static readonly string[] SecondSplit = { ": " };
     private static readonly string[] ThirdSplit = { ", " };
+    private static readonly string[] FourthSplit = { " " };
 
     private static char oldWindDir = '0';
     private static string oldWindValue = "";
@@ -191,17 +203,17 @@ public static class VNyanWebSocket {
                 if (result[0] == "Wind") {
                     temp = result[1].Split(ThirdSplit, StringSplitOptions.None);
                     windX = (int) (0-(Convert.ToDecimal(temp[0]))); // Because VNyan wind is model relative, not world relative
-                    windY = (int) (0-(Convert.ToDecimal(temp[1])));
+                    windY = (int) (0-(Convert.ToDecimal(temp[1].Split(FourthSplit, StringSplitOptions.None)[0])));
                     windSpeed = (int) Math.Round(Math.Sqrt((windX * windX) + (windY * windY)));
                     windValue = windX.ToString() + "," + windY.ToString() + "," + windSpeed.ToString();
                 } else if (result[0] == "Pos") {
                     temp = result[1].Split(ThirdSplit, StringSplitOptions.None);
                     globalXPos = (int) Convert.ToDecimal(temp[0]);
-                    globalYPos = (int) Convert.ToDecimal(temp[1]);
+                    globalYPos = (int) Convert.ToDecimal(temp[1].Split(FourthSplit, StringSplitOptions.None)[0]);
                 } else if (result[0] == "CameraPos") {
                     temp = result[1].Split(ThirdSplit, StringSplitOptions.None);
                     cameraXPos = (int) Convert.ToDecimal(temp[0]);
-                    cameraYPos = (int) Convert.ToDecimal(temp[1]);
+                    cameraYPos = (int) Convert.ToDecimal(temp[1].Split(FourthSplit, StringSplitOptions.None)[0]);
                     screenXPos = globalXPos - cameraXPos;
                     screenYPos = globalYPos - cameraYPos;
                     if (oldDangerZoneState) {
