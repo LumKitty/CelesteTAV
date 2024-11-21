@@ -14,8 +14,9 @@ A hack of CelesteTAS used to extract game info and send to VNyan for your model 
 ### Instructions
 
 1. Download from: https://github.com/LumKitty/CelesteTAV/releases/latest
-2. Install CelesteTAS mod via Olympus Mod Manager: https://gamebanana.com/tools/6449
-3. Copy the following text:
+2. Install Olympus Mod Manager and Everest v4449.
+3. Copy zzz_CelesteTAS.zip into your mods folder and launch Celeste
+4. Copy the following text, paste it into Notepad, copy it again:
 ```
 Wind: {Level.Wind}
 HairColour: {Player.Hair.Color}
@@ -24,7 +25,7 @@ CameraPos: {Level.Camera.Position}
 4. Launch Celeste, go to Mod Options -> Celeste TAS -> Info HUD -> Set Custom Info Template from Clipboard
 5. (Optional): Unbind all keyboard and controller bindings for CelesteTAS
 6. Run modified Celeste Studio.exe from this release after the game has reached the title screen
-7. (Optional): Import the example node graph into VNyan to get a starter config
+7. (Optional): Import the example node graph into VNyan to get a starter config (Warning: This example includes code for an earlier version of the Jayo plugin)
 8. Monitor the console window to see which commands get sent to VNyan and write websocket handler nodes to do what you want with that info.
   
 ### Websocket messages 
