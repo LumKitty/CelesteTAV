@@ -1,3 +1,9 @@
+*WARNING: Newer versions of Everest introduced an incompatability with the version of CelesteTAS used by this mod.
+Please downgrade your Everest to v4449 and use the specific version of CelesteTAS from the this release.
+This mod is basically unmaintained, and Celeste modding has moved on to the point that it's basically unusable unless
+it's the only mod you intend to run. It needs a complete rewrite without dependency on CelesteTAS and honestly I
+don't have the time or inclination do this as I've had to retire from playing Celeste*
+
 A hack of CelesteTAS used to extract game info and send to VNyan for your model to react to
 
 ![GIF of a catgirl VTuber playing the last level of Celeste. Her hair changes colour in sync with the colour changes of the in-game character and is also blown around in sync with the in-game wind. When the player dies, the VTuber model is ragdolled](https://github.com/LumKitty/CelesteTAV/assets/8736448/3c1e75b6-5250-4f12-8e8a-4ebf078954eb)
